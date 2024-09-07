@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Affordable electrical products and services in Singapore.">
+    <title>Electrical Supply & Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar with Logo and Cart -->
+    <nav>
+        <div class="container">
+            <div class="nav-logo">
+                <img src="images/Brand-logo.png" alt="Brand Logo" class="brand-logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="cart-icon">
+                <a href="#" id="cart-button">
+                    <img src="images/cart-icon.png" alt="Cart" class="cart-img">
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+                <div class="mini-cart hidden" id="mini-cart-preview">
+                    <h4>Your Cart</h4>
+                    <div id="mini-cart-items"></div>
+                    <button id="mini-cart-checkout-btn">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero">
+            <h1>Electrical Supply & Services</h1>
+            <p>Delivering quality electrical products to consumers and enterprises in Singapore</p>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="products" class="product-category">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <!-- UV-C LED Air Sanitizer Product -->
+            <div class="product-item animate">
+                <div class="product-images">
+                    <img src="images/UV-C-LED-Air-Sanitizer.JPG" alt="UV-C LED Air Sanitizer">
+                </div>
+                <p><strong>Decreases Airborne Transmission Indoors</strong></p>
+                <ul class="product-specs">
+                    <li><strong>Power:</strong> 30W</li>
+                    <li><strong>UVC Energy:</strong> 400MW</li>
+                    <li><strong>UVC Wavelength:</strong> 260-280nm</li>
+                    <li><strong>Lifespan:</strong> 20,000 hrs</li>
+                    <li><strong>Install Area:</strong> 30m²</li>
+                    <li><strong>Size:</strong> 1200 x 91.4 x 55mm</li>
+                    <li><strong>Delivery:</strong> Free (No installation)</li>
+                </ul>
+                <button class="buy-now-btn" data-product-id="1">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    </footer>
+
+    <!-- Full Cart Modal (Hidden by default) -->
+    <div id="cart-modal" class="cart-modal hidden">
+        <div class="cart-content">
+            <h3>Your Cart</h3>
+            <div id="cart-items"></div>
+            <button id="checkout-btn">Checkout</button>
+            <button id="close-cart-btn">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+  <section id="locate">
+    <h2 class="animate">Locate Us</h2>
+    <p class="animate">We are located at Woodlands Dr 50, Singapore, Postal Code 730897.</p>
+    <!-- Embed Google Map -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7966.357444102796!2d103.78023631533794!3d1.4371895136740706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1067034906ed%3A0x4b9f7406a1086e10!2sWoodlands%20Dr%2050%2C%20Singapore!5e0!3m2!1sen!2ssg!4v1633647601977!5m2!1sen!2ssg" 
+            width="100%" height="300" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <section id="contact">
+    <h2 class="animate">Contact Us</h2>
+    <p class="animate">Email: <a href="mailto:d830009929@gmail.com">d830009929@gmail.com</a></p>
+    <p class="animate">Tel: <a href="tel:+6596331141">+65 96331141</a></p>
+    <form id="contactForm" class="animate">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 DNK Electrical Solutions - Powering Homes & Businesses</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
